@@ -38,13 +38,13 @@ function gamePlay(){
         return;
     }
     if(userNum == randomNum){
-        result.textContent = `${randomNum} 정답입니다!`;
+        result.textContent = `🍀${randomNum}🍀 정답입니다!`;
         playBtn.disabled = true;
         return;
     }else if(userNum > randomNum){
-        result.textContent = `${userNum} down`;
+        result.textContent = `Down! (입력숫자 : ${userNum})`;
     }else{
-        result.textContent = `${userNum} up`;
+        result.textContent = `Up! (입력숫자 : ${userNum})`;
     }
     history.push(userNum); //히스토리에 유저넘버 추가
     chanceNum--;
