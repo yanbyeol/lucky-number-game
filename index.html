@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="pageWrap">
+        <h1 class="text-center"> Lucky Number <br> UP & DOWN </h1>
+        <div class="intro container">
+            🍀행운의 숫자를 맞춰보세요 🍀
+            <input type="text" placeholder="닉네임" id="userName" required>
+            <button id="playBtn">Game Start</button>
+        </div>
+        <div class="playZone container text-center">
+            <div id="result">🍀행운의 숫자를 맞춰보세요 🍀</div>
+            <div>남은기회 : <span id="chance">5</span></div>
+            <input type="number" id="userInput" placeholder="1~100 사이의 숫자를 입력하세요" required>
+            <button id="playBtn">go</button>
+            <button id="resetBtn">reset</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

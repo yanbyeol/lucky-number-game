@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'OKDDUNG';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'bitbit';
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+}
+.text-center {
+    text-align: center;
+}
+.pageWrap{
+    background-color: #e2f9c8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'bitbit';
+    font-size: 20px;
+}
+.container,
+.intro {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fbfbfb;
+    border-radius: 30px;
+    padding: 100px 0px;
+    box-shadow: 0px 0px 30px #00000014;
+}
+.intro{
+    position: fixed;
+    display: none;
+}
+h1 {
+    font-family: 'OKDDUNG';
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: #082709;
+}
+.pageWrap input,
+.pageWrap button {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+.pageWrap input {
+    border: solid 3px #217724;
+}
+.pageWrap button {
+    border: none;
+    outline: none;
+
+}
+#playBtn {
+    background-color: #217724;
+    color: #fff
+}
+@media (max-width: 767px){
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
