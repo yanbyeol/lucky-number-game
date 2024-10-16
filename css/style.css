@@ -18,6 +18,9 @@ body {
 .text-center {
     text-align: center;
 }
+.d-none{
+    display: none!important;
+}
 .pageWrap{
     background-color: #e2f9c8;
     min-height: 100vh;
@@ -37,10 +40,17 @@ body {
     padding: 100px 0px;
     box-shadow: 0px 0px 30px #00000014;
 }
-.intro{
-    position: fixed;
-    display: none;
+
+.playZone{
+    position: relative;
 }
+
+.playZone .status-bar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
 h1 {
     font-family: 'OKDDUNG';
     margin-bottom: 50px;
@@ -59,7 +69,9 @@ h1 {
     box-sizing: border-box;
     font-size: inherit;
     font-family: inherit;
+    cursor: pointer;
 }
+
 .pageWrap input {
     border: solid 3px #217724;
 }
@@ -68,9 +80,18 @@ h1 {
     outline: none;
 
 }
+.pageWrap button:disabled {
+    background-color: #5f5f5f!important;
+    cursor: default;
+}
+#startBtn,
+#resetBtn.gameEnd,
 #playBtn {
     background-color: #217724;
     color: #fff
+}
+#result span{
+    font-size: 30px;
 }
 @media (max-width: 767px){
     h1 {
